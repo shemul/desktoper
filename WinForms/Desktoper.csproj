@@ -25,7 +25,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <InstallUrl>https://raw.githubusercontent.com/shemul/desktoper/publish/WinForms/publish/</InstallUrl>
+    <InstallUrl>https://raw.githubusercontent.com/shemul/desktoper/master/WinForms/publish/</InstallUrl>
     <SupportUrl>http://shemul.me/app/oop2/support</SupportUrl>
     <ErrorReportUrl>http://shemul.me/app/oop2/error</ErrorReportUrl>
     <TargetCulture>en-US</TargetCulture>
