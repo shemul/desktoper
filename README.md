@@ -1,7 +1,7 @@
 Welcome to Desktoper!
 ===================
 
-[![](http://s24.postimg.org/5k1fq4uf5/Yq_Tqq_Custom.png)](https://www.visualstudio.com)  [![](http://s28.postimg.org/8goipsvpl/flickr_logo_transparent_Custom.png)](https://www.flicker.com) 
+[![](http://s24.postimg.org/5k1fq4uf5/Yq_Tqq_Custom.png)](https://www.visualstudio.com)  [![](http://s28.postimg.org/8goipsvpl/flickr_logo_transparent_Custom.png)](https://www.visualstudio.com) 
 
 
 
