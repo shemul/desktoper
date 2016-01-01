@@ -2,7 +2,7 @@ Welcome to Desktoper!
 ===================
 
 
-Hey! I'm your desktop wallpaper assistant named **Desktoper**. I can get your desire wallpaper from internet based on your **interest **. 
+Hey! I'm your desktop wallpaper assistant named **Desktoper**. I can get your desire wallpaper from internet based on your **interest**
 
 ----------
 
