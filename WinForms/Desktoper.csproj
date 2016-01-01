@@ -18,20 +18,22 @@
     <PublishUrl>publish\</PublishUrl>
     <Install>false</Install>
     <InstallFrom>Web</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateEnabled>true</UpdateEnabled>
     <UpdateMode>Foreground</UpdateMode>
     <UpdateInterval>7</UpdateInterval>
     <UpdateIntervalUnits>Days</UpdateIntervalUnits>
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <InstallUrl>http://shemul.me/app/oop2/</InstallUrl>
+    <InstallUrl>https://raw.githubusercontent.com/shemul/desktoper/publish/WinForms/publish/</InstallUrl>
     <SupportUrl>http://shemul.me/app/oop2/support</SupportUrl>
     <ErrorReportUrl>http://shemul.me/app/oop2/error</ErrorReportUrl>
     <TargetCulture>en-US</TargetCulture>
     <ProductName>Desktoper</ProductName>
     <PublisherName>NameDiyeKiHobe</PublisherName>
     <SuiteName>Shemul</SuiteName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
     <ApplicationRevision>17</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
