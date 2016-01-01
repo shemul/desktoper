@@ -1,6 +1,9 @@
 Welcome to Desktoper!
 ===================
 
+[![](http://s24.postimg.org/5k1fq4uf5/Yq_Tqq_Custom.png)](https://www.visualstudio.com)  [![](http://s28.postimg.org/8goipsvpl/flickr_logo_transparent_Custom.png)](https://www.visualstudio.com) 
+
+
 
 Hey! I'm your desktop wallpaper assistant named **Desktoper**. I can get your desire wallpaper from internet based on your **interest**
 
@@ -39,5 +42,4 @@ Courtesy
  - [imageresizer.io](http://imageresizer.io)
  - [CSSetDesktopWallpaper](https://code.msdn.microsoft.com/windowsapps/CSSetDesktopWallpaper-2107409c)
 
-[![](http://s24.postimg.org/5k1fq4uf5/Yq_Tqq_Custom.png)](https://www.visualstudio.com)  [![](http://s28.postimg.org/8goipsvpl/flickr_logo_transparent_Custom.png)](https://www.visualstudio.com)
-
+[![](http://s13.postimg.org/8hd6ng4g3/stack_overflow_logo_Custom.png)](stackoverflow.com) 
