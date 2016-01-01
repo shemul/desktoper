@@ -16,7 +16,7 @@
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>true</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
-    <Install>true</Install>
+    <Install>false</Install>
     <InstallFrom>Web</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
     <UpdateMode>Foreground</UpdateMode>
@@ -25,18 +25,18 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <InstallUrl>https://raw.githubusercontent.com/shemul/desktoper/master/WinForms/publish/</InstallUrl>
-    <SupportUrl>http://shemul.me/app/oop2/support</SupportUrl>
-    <ErrorReportUrl>http://shemul.me/app/oop2/error</ErrorReportUrl>
+    <InstallUrl>https://dl.dropboxusercontent.com/u/41343431/production/desktoper/</InstallUrl>
+    <SupportUrl>https://github.com/shemul/desktoper/wiki</SupportUrl>
+    <ErrorReportUrl>https://github.com/shemul/desktoper/issues</ErrorReportUrl>
     <TargetCulture>en-US</TargetCulture>
     <ProductName>Desktoper</ProductName>
     <PublisherName>NameDiyeKiHobe</PublisherName>
     <SuiteName>Shemul</SuiteName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>18</ApplicationRevision>
+    <ApplicationRevision>19</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <UseApplicationTrust>false</UseApplicationTrust>
+    <UseApplicationTrust>true</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
