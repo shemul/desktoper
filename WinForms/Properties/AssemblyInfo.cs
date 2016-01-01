@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Desktoper")]
 [assembly: AssemblyDescription("A tools that get your desire wallapaper instantly and comfortly")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("NameDiyeKiHobe")]
+[assembly: AssemblyCompany("Shemul Hossain")]
 [assembly: AssemblyProduct("Desktoper")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("(C) NothingYet")]

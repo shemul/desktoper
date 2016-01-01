@@ -33,5 +33,37 @@ namespace Deskoper.Properties {
                 this["OAuthToken"] = value;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=localhost;Initial Catalog=Desktoper;Integrated Security=True")]
+        public string DesktoperConnectionString {
+            get {
+                return ((string)(this["DesktoperConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\v11.0;AttachDbFilename=|DataDirectory|\\Desktoper.mdf;Integr" +
+            "ated Security=True;Connect Timeout=30")]
+        public string DesktoperConnectionString1 {
+            get {
+                return ((string)(this["DesktoperConnectionString1"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\v11.0;AttachDbFilename=|DataDirectory|\\data.mdf;Integrated " +
+            "Security=True;Connect Timeout=30")]
+        public string dataConnectionString {
+            get {
+                return ((string)(this["dataConnectionString"]));
+            }
+        }
     }
 }

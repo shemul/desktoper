@@ -13,11 +13,12 @@ using MetroFramework.Forms;
 using MetroFramework;
 using System.Diagnostics;
 using System.IO;
-using System.Net;
+
 using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
 using System.Threading;
+using Deskoper;
 
 namespace WinForms
 {
@@ -30,45 +31,49 @@ namespace WinForms
         string filePath;
         Flickr f = FlickrManager.GetInstance();
         PhotoSearchOptions o;
+        string query;
+        
 
+    
         public Mainform()
         {
             InitializeComponent();
             filePath = Environment.GetFolderPath(System.Environment.SpecialFolder.LocalApplicationData);
             System.IO.Directory.CreateDirectory(filePath + "/desktoper");
+            
+            
+            
         }
 
      
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
+       
 
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void PhotoSearchForm_Load(object sender, EventArgs e)
         {
-            label4.Text = resolution.Width + " X " + resolution.Height;
-            
+            //userStatusBar.Text = Login.TheValue;
+            label4.Text = "Current Screen : "+resolution.Width + " X " + resolution.Height;
+           
+        
+
         }
 
-        
+
+       
+
         public void flickerRequest()
         {
             o = new PhotoSearchOptions();
             o.Extras = PhotoSearchExtras.LargeUrl | PhotoSearchExtras.Description | PhotoSearchExtras.OwnerName | PhotoSearchExtras.Large1600Url;
             o.SortOrder = PhotoSearchSortOrder.Relevance;
-
+            o.SafeSearch = SafetyLevel.Safe;
 
             o.Text = workspace.Text;
             o.Tags = workspace.Text + ",large";
             o.Page = 1;
             o.PerPage = 50;
-           // Thread.Sleep(3000);
+            //Thread.Sleep(3000);
             //bindingSource1.DataSource = f.PhotosSearch(o);
 
             if (InvokeRequired)
@@ -81,14 +86,7 @@ namespace WinForms
             bindingSource1.DataSource = f.PhotosSearch(o);
 
         }
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-            ThreadStart childref = new ThreadStart(flickerRequest);
-            Thread childThread = new Thread(childref);
-            childThread.Start();
-            
-        }
+       
 
         private void btnSetas_Click(object sender, EventArgs e)
         {
@@ -119,8 +117,6 @@ namespace WinForms
             {
                 if (isBlue.Checked == true)
                 {
-                    
-
                     var data = webClient.DownloadString("http://api.imageresizer.io/v0.1/images?url=" + urlAddress);
                     
                     JObject jo = (JObject)JsonConvert.DeserializeObject(data);
@@ -183,32 +179,7 @@ namespace WinForms
             }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            
-           
-            
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroCheckBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroComboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+    
 
         private WallpaperStyle SelectedWallpaperStyle
         {
@@ -236,6 +207,57 @@ namespace WinForms
                 }
             }
         }
+
+        private void workspace_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroTextBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            if (!(workspace.Text == ""))
+            {
+                ThreadStart childref = new ThreadStart(flickerRequest);
+                Thread childThread = new Thread(childref);
+                childThread.Start();
+            }
+            else
+            {
+                MetroMessageBox.Show(this, "Please tell what you want to search", "Desktoper");
+                workspace.Focus();
+
+            }
+        }
+
+        private void userStatusBar_Click(object sender, EventArgs e)
+        {
+            var result = MetroMessageBox.Show(this, "Shemul Hossain\ntheshemul@gmail.com\ngithub.com/shemul\nBangladesh\nshemul.me\nDo you want to visit project url ?", "Desktoper", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                System.Diagnostics.Process.Start("http://github.com/shemul/desktoper");
+            } 
+        }
+
+       
+
+
+      
+
+       
+
+       
+
+        
+
+       
+
+        
 
         //End of Async Downloader
     }
