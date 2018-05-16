@@ -24,7 +24,7 @@
     <UpdateIntervalUnits>Days</UpdateIntervalUnits>
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
-    <MapFileExtensions>true</MapFileExtensions>
+    <MapFileExtensions>false</MapFileExtensions>
     <InstallUrl>https://github.com/shemul/desktoper/raw/master/WinForms/publish/</InstallUrl>
     <SupportUrl>https://github.com/shemul/desktoper/wiki</SupportUrl>
     <ErrorReportUrl>https://github.com/shemul/desktoper/issues</ErrorReportUrl>
@@ -32,9 +32,9 @@
     <ProductName>Desktoper</ProductName>
     <PublisherName>NameDiyeKiHobe</PublisherName>
     <SuiteName>Shemul</SuiteName>
-    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>31</ApplicationRevision>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>33</ApplicationRevision>
     <ApplicationVersion>1.1.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
