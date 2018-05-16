@@ -19,6 +19,7 @@ using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
 using System.Threading;
 using Deskoper;
+using System.Text.RegularExpressions;
 
 namespace WinForms
 {
@@ -31,7 +32,7 @@ namespace WinForms
         string filePath;
         Flickr f = FlickrManager.GetInstance();
         PhotoSearchOptions o;
-        string query;
+        //string query;
         
 
     
@@ -55,8 +56,6 @@ namespace WinForms
             //userStatusBar.Text = Login.TheValue;
             label4.Text = "Current Screen : "+resolution.Width + " X " + resolution.Height;
            
-        
-
         }
 
 
@@ -91,8 +90,6 @@ namespace WinForms
         private void btnSetas_Click(object sender, EventArgs e)
         {
             
-           
-
             destination = filePath + "/desktoper/" + textBox2.Text + ".jpg";
 
             if (textBox5.Text == "")
@@ -116,30 +113,54 @@ namespace WinForms
             using (webClient = new WebClient())
             {
                 if (isBlue.Checked == true)
-                {
-                    var data = webClient.DownloadString("http://api.imageresizer.io/v0.1/images?url=" + urlAddress);
-                    
-                    JObject jo = (JObject)JsonConvert.DeserializeObject(data);
-                    string id = jo.GetValue("response").Value<string>("id");
-                    urlAddress = "http://img.imageresizer.io/" + id + "/Lightbulb-moment.jpg?size=100%&blur=10";
-                    
+                {   try
+                    {
+                        System.Uri uri = new Uri(urlAddress);
+                        string uriWithoutScheme = uri.Host + uri.PathAndQuery + uri.Fragment;
+                        var final_url = "https://rsz.io/" + uriWithoutScheme + "?blur=5";
+                        Console.WriteLine(final_url.ToString());
+                        var data = webClient.DownloadString(final_url);
 
+                        //JObject jo = (JObject)JsonConvert.DeserializeObject(data);
+                        //string id = jo.GetValue("response").Value<string>("id");
+                        //urlAddress = "http://img.imageresizer.io/" + id + "/Lightbulb-moment.jpg?size=100%&blur=10";
+                        webClient.DownloadFileCompleted += new AsyncCompletedEventHandler(Completed);
+                        webClient.DownloadProgressChanged += new DownloadProgressChangedEventHandler(ProgressChanged);
+
+                        Uri URL = new Uri(final_url);
+                        //Console.WriteLine(urlAddress);
+                        try
+                        {
+                            webClient.DownloadFileAsync(URL, location);
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.StackTrace.ToString());
+                        }
+
+                    } catch(Exception ex)
+                    {
+                        MessageBox.Show(ex.Message.ToString());
+                    }
+                } else
+                {
+                    webClient.DownloadFileCompleted += new AsyncCompletedEventHandler(Completed);
+                    webClient.DownloadProgressChanged += new DownloadProgressChangedEventHandler(ProgressChanged);
+                    Uri URL = new Uri(urlAddress);
+                    try
+                    {
+                        webClient.DownloadFileAsync(URL, location);
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine("testsss");
+                        Console.WriteLine(ex.StackTrace.ToString());
+                        MessageBox.Show(ex.StackTrace.ToString());
+                    }
                 }
                
 
-                webClient.DownloadFileCompleted += new AsyncCompletedEventHandler(Completed);
-                webClient.DownloadProgressChanged += new DownloadProgressChangedEventHandler(ProgressChanged);
-
-                Uri URL = new Uri(urlAddress);
-                //Console.WriteLine(urlAddress);
-                try
-                {
-                    webClient.DownloadFileAsync(URL, location);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
+                
             }
         }
 
