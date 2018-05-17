@@ -25,7 +25,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>false</MapFileExtensions>
-    <InstallUrl>https://github.com/shemul/desktoper/raw/master/WinForms/publish/</InstallUrl>
+    <InstallUrl>https://github.com/shemul/desktoper/raw/static/</InstallUrl>
     <SupportUrl>https://github.com/shemul/desktoper/wiki</SupportUrl>
     <ErrorReportUrl>https://github.com/shemul/desktoper/issues</ErrorReportUrl>
     <TargetCulture>en-US</TargetCulture>
@@ -80,7 +80,7 @@
     <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>false</SignManifests>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>App-icon.ico</ApplicationIcon>
@@ -89,7 +89,7 @@
     <StartupObject />
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>false</SignAssembly>
+    <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>publisher_certificate.pfx</AssemblyOriginatorKeyFile>

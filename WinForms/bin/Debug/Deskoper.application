@@ -7,14 +7,14 @@
     <framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="Deskoper.exe.manifest" size="8350">
+    <dependentAssembly dependencyType="install" codebase="Deskoper.exe.manifest" size="8418">
       <assemblyIdentity name="Deskoper.exe" version="1.1.0.39" publicKeyToken="0000000000000000" language="en-US" processorArchitecture="x86" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>WVn7ffzi38HRXiy2WVoW3kikdiE=</dsig:DigestValue>
+        <dsig:DigestValue>fydOt/2nA+Q+hfZVMt5SDEXEGT8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

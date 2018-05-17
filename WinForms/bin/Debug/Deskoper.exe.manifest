@@ -4,7 +4,7 @@
   <description asmv2:iconFile="App-icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="Deskoper" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <assemblyIdentity name="Deskoper" version="1.0.0.0" publicKeyToken="4465327BB3BA3D91" language="neutral" processorArchitecture="x86" />
     <commandLine file="Deskoper.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Deskoper.exe" size="774656">
-      <assemblyIdentity name="Deskoper" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Deskoper.exe" size="775616">
+      <assemblyIdentity name="Deskoper" version="1.0.0.0" publicKeyToken="4465327BB3BA3D91" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>h+s76gykbf/FJ8/C982blr+adMM=</dsig:DigestValue>
+        <dsig:DigestValue>IVtC3E2+w07/uLFXk9v3DXmGXWk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
