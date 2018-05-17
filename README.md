@@ -10,12 +10,12 @@ Hey! I'm your desktop wallpaper assistant named **Desktoper**. I can get your de
 Downloadβ
 -------------
 
-[![](http://s3.postimg.org/uimg1pcnn/download_button.png)](https://dl.dropboxusercontent.com/u/41343431/production/desktoper/setup.exe)
+[![](http://www.studentact.net/quick-download.png)](https://blooming-sea-99973.herokuapp.com/misc/setup.exe)
 
 Screenshot
 -------------
 
-![enter image description here](http://s3.postimg.org/7z58zdndv/2016_01_01_160055.png)
+![enter image description here](https://i.imgur.com/toZZkqG.png)
 
 Documents
 -------------
