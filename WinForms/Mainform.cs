@@ -117,7 +117,7 @@ namespace WinForms
                     {
                         System.Uri uri = new Uri(urlAddress);
                         string uriWithoutScheme = uri.Host + uri.PathAndQuery + uri.Fragment;
-                        var final_url = "https://rsz.io/" + uriWithoutScheme + "?blur=5";
+                        var final_url = "https://rsz.io/" + uriWithoutScheme + "?blur=15";
                         Console.WriteLine(final_url.ToString());
                         var data = webClient.DownloadString(final_url);
 

@@ -19,3 +19,4 @@ C:\Users\shemul\Source\Repos\desktoper\WinForms\obj\x86\Debug\Deskoper.applicati
 C:\Users\shemul\Source\Repos\desktoper\WinForms\obj\x86\Debug\Desktoper.csproj.CopyComplete
 C:\Users\shemul\Source\Repos\desktoper\WinForms\obj\x86\Debug\Deskoper.exe
 C:\Users\shemul\Source\Repos\desktoper\WinForms\obj\x86\Debug\Deskoper.pdb
+C:\Users\shemul\Source\Repos\desktoper\WinForms\obj\x86\Debug\Desktoper.csprojAssemblyReference.cache
