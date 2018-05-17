@@ -25,7 +25,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>false</MapFileExtensions>
-    <InstallUrl>https://github.com/shemul/desktoper/raw/static/</InstallUrl>
+    <InstallUrl>https://blooming-sea-99973.herokuapp.com/misc/</InstallUrl>
     <SupportUrl>https://github.com/shemul/desktoper/wiki</SupportUrl>
     <ErrorReportUrl>https://github.com/shemul/desktoper/issues</ErrorReportUrl>
     <TargetCulture>en-US</TargetCulture>
@@ -34,8 +34,8 @@
     <SuiteName>Shemul</SuiteName>
     <WebPage>publish.htm</WebPage>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>39</ApplicationRevision>
-    <ApplicationVersion>1.1.0.39</ApplicationVersion>
+    <ApplicationRevision>42</ApplicationRevision>
+    <ApplicationVersion>1.1.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
